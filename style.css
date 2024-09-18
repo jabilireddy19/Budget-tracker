@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f7f4ef; /* Light cream background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    width: 400px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #9b59b6; /* Pastel purple for the title */
+}
+
+.budget-display {
+    margin-bottom: 20px;
+}
+
+.budget-display h2 {
+    font-size: 1.5rem;
+    color: #27ae60; /* Light pastel green */
+}
+
+.income-expense {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.income h3, .expense h3 {
+    font-size: 1.2rem;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Make white text pop with darker pastel background colors */
+.income {
+    background-color: #38ada9; /* Darker pastel teal for income */
+}
+
+.expense {
+    background-color: #e17055; /* Darker pastel coral for expense */
+}
+
+.transaction-form {
+    margin-bottom: 20px;
+}
+
+.transaction-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #9b59b6; /* Pastel purple border */
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fceff1; /* Light pastel pink input background */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #9b59b6; /* Pastel purple button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #8e44ad; /* Slightly darker purple on hover */
+}
+
+.transaction-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.transaction-list li {
+    background-color: #fafafa;
+    padding: 10px;
+    margin: 5px 0;
+    border-left: 5px solid #9b59b6; /* Pastel purple for transactions */
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transaction-list li.income-item {
+    border-color: #38ada9; /* Darker teal border for income items */
+}
+
+.transaction-list li.expense-item {
+    border-color: #e17055; /* Darker coral border for expense items */
+}
+
+.transaction-list button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: #d63031; /* Light pastel red for delete buttons */
+    cursor: pointer;
+}
